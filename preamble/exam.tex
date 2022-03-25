@@ -1,0 +1,40 @@
+\addpoints
+\pointpoints{Punkt}{Punkte}
+\bonuspointpoints{Bonuspunkt}{Bonuspunkte}
+\renewcommand{\solutiontitle}{\noindent\textbf{Lösung:}%
+\enspace}
+
+\chqword{Frage}
+\chpgword{Seite}
+\chpword{Punkte}
+\chbpword{Bonuspunkte}
+\chsword{Erreicht}
+\chtword{Gesamt}
+
+\hpword{Punkte:} % Punktetabelle
+\hsword{Ergebnis:}
+\hqword{Aufgabe:}
+\htword{Summe:}
+
+\pagestyle{headandfoot}
+\firstpageheadrule
+\runningheadrule
+\firstpageheader{\examclass}{\large{\textbf{\subject}}\\ \large{\examtype\ \examno}}{\examdate}
+\runningheader{\examclass}{\large{\textbf{\subject}}\\ \large{\examtype\ \examno}}{\examdate}
+\firstpagefooter{}{Seite \thepage\ von \numpages}{}
+\runningfooter{}{Seite \thepage\ von \numpages}{}
+
+%\qformat{\textbf{Aufgabe \thequestion}\hspace{12.6cm}(\totalpoints)\hfill}
+\qformat{\textbf{Aufgabe \thequestion}\hfill(\totalpoints)}
+%\renewcommand{\questionlabel}{\textbf{Aufgabe \thequestion}}
+
+%\setlength{\rightpointsmargin}{2.7cm}
+
+\pointsinrightmargin
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\colorgrids
+\definecolor{GridColor}{gray}{0.7}
+
+\tikzumlset{fill class=white}

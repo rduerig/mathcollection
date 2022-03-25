@@ -1,0 +1,27 @@
+% layout for listings
+\lstset{
+ morekeywords={for, in, if, then, endfor},
+ basicstyle=\ttfamily,
+ keywordstyle=\bfseries,
+ frame=single,
+ frameround=tttt,
+ escapeinside={|}{|},
+ numbers=left,
+ numberstyle=\tiny,
+ breaklines=true
+}
+
+% page layout
+\geometry{a4paper,left=2.5cm,right=2.5cm, top=3cm, bottom=3cm}
+
+% font layout
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\huge\bfseries}
+    {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+%\titleformat*{\chapter}{\LARGE\bfseries\sffamily}
+\titleformat*{\section}{\Large\bfseries\sffamily}
+\titleformat*{\subsection}{\large\bfseries\sffamily}
+\titleformat*{\subsubsection}{\normalsize\bfseries\sffamily}
+\titleformat*{\paragraph}{\small\bfseries\sffamily}
+\titleformat*{\subparagraph}{\footnotesize\bfseries\sffamily}
+
