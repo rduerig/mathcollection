@@ -1,0 +1,57 @@
+\documentclass[a4paper, 12pt, ngerman]{exam}
+\usepackage{preamble/draft}
+%\usepackage{polynom}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+
+\input{preamble/layout}
+
+\newcommand{\examtype}{Übung Differentialrechnung}
+\newcommand{\examno}{2}
+\newcommand{\examdate}{26.04.2022}
+\newcommand{\subject}{Mathematik}
+\newcommand{\examclass}{}
+
+\input{preamble/worksheet}
+
+%\printanswers
+
+\begin{document}
+
+\begin{questions}
+ 
+  \question
+  Gegeben sei folgender Graph der Funktion $f(x) = x^3+2x^2-5$:
+  \begin{tikzpicture}
+    \begin{axis}[
+        xmin = -4.0, xmax = 7.0,
+        ymin = -3.0, ymax = 10.0,
+        xtick distance = 1.0,
+        ytick distance = 1.0,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        grid = both,
+        width = \textwidth,
+        height = \textwidth,
+        axis x line=center,
+        axis y line=center,
+        xlabel = {$x$},
+        ylabel = {$y$},
+      ]
+        \addplot[
+            domain = -4:8,
+            smooth,
+            thick,
+            blue,
+        ] {x^3+2*x^2-5};
+    \end{axis}
+    \end{tikzpicture}
+  \begin{parts}
+    \part
+    \begin{solution}
+    \end{solution}
+  \end{parts}
+
+\end{questions}
+
+\end{document}
