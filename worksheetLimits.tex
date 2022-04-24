@@ -1,0 +1,108 @@
+\documentclass[a4paper, 12pt, ngerman]{exam}
+\usepackage{preamble/draft}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+
+\input{preamble/layout}
+
+\newcommand{\examtype}{Übung Grenzwerte}
+\newcommand{\examno}{3}
+\newcommand{\examdate}{26.04.2022}
+\newcommand{\subject}{Mathematik}
+\newcommand{\examclass}{}
+
+\input{preamble/worksheet}
+
+%\printanswers
+
+\begin{document}
+
+\begin{questions}
+ 
+  \question
+  Gegeben Sei die folgende Funktion: \[ f(x) = \frac{2}{x+1} \]
+  \begin{parts}
+    \part
+    Bestimmen Sie den Definitionsbereich $D$ der Funktion $f(x)$.
+    \begin{solution}
+      \[ D = \left\{ x \in \mathbb{R}:\ x+1 \neq 0 \right\} \]
+      bzw. \[ D = \left\{ x \in \mathbb{R}:\ x \neq -1 \right\} \]
+    \end{solution}
+    \part
+    Untersuchen Sie das Verhalten der Funktion $f(x)$ für $x \to -1$.
+    \begin{solution}
+      \[ \lim \limits_{\substack{x \to -1\\ x > -1}} f(x) = \infty \]
+      und \[ \lim \limits_{\substack{x \to -1\\ x < -1}} f(x) = -\infty \]
+    \end{solution}
+    \part
+    Untersuchen Sie das Verhalten der Funktion $f(x)$ im Unendlichen, also für $x \to \infty$.
+    \begin{solution}
+      \[ 
+        \begin{aligned}
+          \lim \limits_{x \to \infty} f(x) \\
+          = \lim \limits_{x \to \infty} \cfrac{x\cfrac{2}{x}}{x(1+\frac{1}{x})} \\
+          = \lim \limits_{x \to \infty} \cfrac{\cfrac{2}{x}}{1+\frac{1}{x}} \\
+          = \cfrac{0}{1+0} \\
+          = 0
+        \end{aligned}
+      \]
+    \end{solution}
+  \end{parts}
+
+  \question
+  Gegeben Sei die folgende Funktion: \[ f(x) = \frac{4x+1}{x} \]
+  \begin{parts}
+    \part
+    Bestimmen Sie den Definitionsbereich $D$ der Funktion $f(x)$.
+    \begin{solution}
+      \[ D = \left\{ x \in \mathbb{R}:\ x \neq 0 \right\} \]
+    \end{solution}
+    \part
+    Untersuchen Sie das Verhalten der Funktion $f(x)$ im Unendlichen, also für $x \to \infty$.
+    \begin{solution}
+      \[ 
+        \begin{aligned}
+          \lim \limits_{x \to \infty} f(x) \\
+          = \lim \limits_{x \to \infty} (\frac{4x}{x} + \frac{1}{x}) \\
+          = \lim \limits_{x \to \infty} (4 + \frac{1}{x}) \\
+          = 4 + 0 \\
+          = 4
+        \end{aligned}
+      \]
+    \end{solution}
+  \end{parts}
+
+  \question
+  Gegeben Sei die folgende Funktion: \[ f(x) = \frac{2x^2-x+3}{x^2+3x} \]
+  \begin{parts}
+    \part
+    Bestimmen Sie den Definitionsbereich $D$ der Funktion $f(x)$.
+    \begin{solution}
+      \[
+        \begin{aligned}
+          x^2 + 3x = 0 \\
+          \rightarrow x_1 = -\frac{3}{2} + \sqrt{\frac{9}{4}} = -\frac{3}{2} + \frac{3}{2} = 0 \\
+          \rightarrow x_2 = -\frac{3}{2} - \frac{3}{2} = -3
+        \end{aligned}
+      \]
+      Damit ist:
+      \[ D = \left\{ x \in \mathbb{R}:\ x \neq 0 \land x \neq -3 \right\} \]
+    \end{solution}
+    \part
+    Untersuchen Sie das Verhalten der Funktion $f(x)$ im Unendlichen, also für $x \to \infty$.
+    \begin{solution}
+      \[ 
+        \begin{aligned}
+          \lim \limits_{x \to \infty} f(x) \\
+          = \lim \limits_{x \to \infty} \frac{x^2(2-\frac{1}{x}+\frac{3}{x^2})}{x^2(1+\frac{3}{x})} \\
+          = \lim \limits_{x \to \infty} \frac{2-\frac{1}{x}+\frac{3}{x^2}}{1+\frac{3}{x}} \\
+          = \cfrac{2-0+0}{1+0} \\
+          = 2
+        \end{aligned}
+      \]
+    \end{solution}
+  \end{parts}
+
+\end{questions}
+
+\end{document}
